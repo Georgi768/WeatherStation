@@ -87,7 +87,7 @@ namespace NHLweatherStation
                 city = "Emmen";
             }
             //setting up the api 
-            string url = string.Format("http://api.weatherapi.com/v1/forecast.xml?key=2f8b18bf30cf4891889163141200706&days=5&q=" + city);
+            string url = string.Format("http://api.weatherapi.com/v1/forecast.xml?key=YourKey&days=5&q=" + city);
 
             XDocument Document = XDocument.Load(url);
 
@@ -140,7 +140,7 @@ namespace NHLweatherStation
             }
             else
             {
-                string url2 = string.Format("http://api.weatherapi.com/v1/forecast.xml?key=2f8b18bf30cf4891889163141200706&days=5&q={0}", city);
+                string url2 = string.Format("http://api.weatherapi.com/v1/forecast.xml?key=YourKey&days=5&q={0}", city);
 
                 XDocument Document2 = XDocument.Load(url2);
 
